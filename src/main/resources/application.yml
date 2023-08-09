@@ -1,0 +1,9 @@
+server:
+  port: 443
+  tomcat:
+    uri-encoding: UTF-8
+## ssl配置
+  ssl:
+    key-store: classpath:xc.p12
+    key-alias: tomcat-https
+    key-store-password: 123456
