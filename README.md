@@ -2,7 +2,7 @@
 
 
 ## 1.生成https数字签名证书 
-使用jdk自动工具生成自签名数字证书，命令如下：
+使用jdk自动工具生成自签名数字证书，windows命令如下：
 ```
 >keytool -genkey -alias tomcat-https -keyalg RSA -keysize 2048 -keystore xc.p12 -validity 365 -dname "CN=hdsam, OU=test-group, O=test, L=HuBei, ST=Wuhan, C=CN"
 ```
@@ -15,7 +15,7 @@
 配置jks文件路径等和生成签名的相关参数。
 
 ## 4. 启动项目并开启浏览器访问 
-测试https 443端口`https://localhost/api` , 测试http 8080端口时，可重定向到443端口:'http://localhost:8080/api`
+测试https 443端口`https://localhost/api` , 测试http 8080端口时，可重定向到443端口:`http://localhost:8080/api`
 
 
 
